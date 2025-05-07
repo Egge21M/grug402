@@ -18,7 +18,7 @@ const pool = new SimplePool();
 
 export const useCashu = (
   request: { amount: number; mint: string } | undefined,
-): [string | undefined, () => void, string] => {
+): [string | undefined, () => void, string | undefined] => {
   const [cashuToken, setCashuToken] = useState<string>();
   const [nostrUser, setNostrUser] = useState<{
     sk: Uint8Array;
