@@ -1,4 +1,4 @@
-import { FaBolt, FaLock } from "react-icons/fa6";
+import { FaBolt, FaLock, FaSquareGithub } from "react-icons/fa6";
 import { TbBrandPeanut } from "react-icons/tb";
 import { useRequest } from "./hooks/useRequest";
 import Modal from "./components/Modal";
@@ -126,6 +126,21 @@ sequenceDiagram
     Server->>Client: Status: 200 + resource
 `}
         </pre>
+        <h2 className="text-2xl font-bold my-4">Code Examples</h2>
+        <a
+          href="https://github.com/Egge21M/grug402"
+          className="flex gap-2 items-center"
+        >
+          <FaSquareGithub />
+          Website Repository
+        </a>
+        <a
+          href="https://github.com/Egge21M/cashu402"
+          className="flex gap-2 items-center"
+        >
+          <FaSquareGithub />
+          Backend Repository
+        </a>
       </div>
     </main>
   );
